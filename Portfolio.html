@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+
+<body class="final-body">
+
+    <menu>
+        <div class="navbar" id="navbar">
+            <div class="name">
+                <h2 class="animate__animated animate__pulse animate__infinite">Matthieu </h2>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul> 
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>   
+            <div class="mode-toggle">
+                <div class="switch">
+                    <div class="flicker"></div>
+                    <div class="moon"></div>
+                </div>
+            </div>
+            <div class="under-section"></div>
+        </div>
+    </menu>
+
+        <div class="arrow rellax" id="arrows" data-rellax-speed="-10.5">
+            <span class="single-arrow"></span>
+            <span class="single-arrow"></span>
+            <span class="single-arrow"></span>
+        </div>
+
+    <main>
+        
+        <section class="presentation">
+            <div class="greeting-box">  
+                <h2>console.log('<span class="greetings" id="greeting-text"></span>');</h2>
+                
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="description" data-tilt data-tilt-max="5" data-tilt-scale="1.05"> 
+                <h2>Hi there and welcome to my space</h2>
+                <p>I’m Matt and I am delighted to have the opportunity to introduce myself and share my passion for web development with you.<br><br>
+                My approach to web development is rooted in a strong emphasis on user experience. I believe that a well-designed website should not only look visually stunning but also provide seamless navigation and intuitive interactions. By employing responsive design techniques and focusing on accessibility, I ensure that every user can have an enjoyable experience, regardless of their device or abilities.<br><br>
+                Thank you for taking the time to explore my web developer portfolio. I invite you to delve deeper into the projects I have included, where you will find examples of my work. I am eager to connect with individuals and organizations who are in need of a skilled and dedicated web developer.
+                </p>
+                    <div class="read-more" id="read-more">
+                        <a href="./readme.html">Read more about me</a>
+                    </div>
+                    <div class="resume">
+                        <a href="./resume.html">My resume</a>
+                    </div>
+            </div>
+            <div class="portrait" data-tilt data-tilt-max="20" data-tilt-scale="1.2">
+                <img class="profile-picture" src=".\IMG_6464-nobg.png" alt="">
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="project-description" data-tilt data-tilt-max="5" data-tilt-scale="1.08">
+                <h2>About my work</h2>
+                <p>Because projects are a good way to reveal initiative and motivation I have decided to display some of mine in this section to highlight my skills and showcase my ability to tackle unique challenges.<br>
+                You will find games and different small apps that I have created with the help of the greatest teacher INTERNET.
+                </p>
+            </div>
+
+           <!--Insert project accordion here!-->
+           <div class="accordion" data-tilt data-tilt-max="5">
+            <div class="content-box">
+                <div class="accordion-title">
+                    <h2><a href=".\projects-page.html">Projects</a></h2>
+                </div>
+            </div>
+           </div>
+        </section>
+        <section class="books">
+            <div class="hero-image" data-tilt data-tilt-max="10">
+                <div class="cube" id="html"></div>
+                <div class="cube" id="css"></div>
+                <div class="cube" id="javascript"></div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-description" data-tilt data-tilt-max="5" data-tilt-scale="1.1">
+                <h2>My skill set</h2>
+                <p>I'm proficient in HTML, CSS and have a strong understanding of JavaScript and PHP. I also manipulate JQuery as a library and I’ve learned the basics of Git as a version control system. 
+                <br>
+                During my first steps in this coding journey I've learned how to use Github and collaborate with other developers and my good communication skills make it easier to work collaboratively with designers. Figma quickly became a good friend of mine when working on the user interface of my personal projects.
+                <br>
+                I'm a natural problem solver without having a QI of 160 but I can troubleshoot issues and come up with creative solutions.</p>
+            </div>
+            <div class="project-container">
+                <div class="project-cards" id="1" data-aos="fade-right" data-aos-delay="500"
+                style="background: transparent;" >
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-html-logo-480.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item1')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="2" data-aos="fade-right" data-aos-delay="250"
+                style="background: transparent;" >
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-css-logo-240.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item2')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="3" data-aos="fade-left" data-aos-delay="250"
+                style="background: transparent;" >
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-javascript-480.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item3')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="4" data-aos="fade-left" data-aos-delay="500"
+                style="background: transparent; ">
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-jquery-500.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item4')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="5" data-aos="fade-up" data-aos-delay="1000"
+                style="background: transparent; ">
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-git-480.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item5')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="6" data-aos="fade-up" data-aos-delay="500"
+                style="background: transparent;">
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-bootstrap-logo-1024.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item6')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="7" data-aos="fade-up" data-aos-delay="500"
+                style="background: transparent; ">
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-tailwindcss-1024.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item7')">Click me 🙂</button>
+            </div>
+                <div class="project-cards" id="8" data-aos="fade-up" data-aos-delay="1000"
+                style="background: transparent; ">
+                <div class="card-logo" data-tilt data-tilt-max="20" data-tilt-scale="1.2"
+                style="background-image: url(icons8-react-480.png); background-size: 80% 100%; background-position: 50%; background-repeat: no-repeat;"></div>
+                <button class="menu-item" onclick="openModal('item8')">Click me 🙂</button>
+            </div>
+            </div>
+        </section>
+
+        <div id="item1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item1')">&times;</span>
+                <h2>HTML</h2>
+                <p>Like probably 99.9% of web developers HTML was my introduction to coding.</p>
+            </div>
+        </div>
+        <div id="item2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item2')">&times;</span>
+                <h2>CSS</h2>
+                <p>Because HTML without CSS is quite ugly I obviously learned it next.</p>
+            </div>
+        </div>
+        <div id="item3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item3')">&times;</span>
+                <h2>JavaScript</h2>
+                <p>Let the fun begin and start using  soem JavaScript to create small projects and make my webpage interactive.</p>
+            </div>
+        </div>
+        <div id="item4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item4')">&times;</span>
+                <h2>Jquery</h2>
+                <p>Time to learn about a JavaScript library as one of my favorite books "JavaScript and JQuery interactive front end web development" from Jon Duckett suggested it.</p>
+            </div>
+        </div>
+        <div id="item5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item5')">&times;</span>
+                <h2>Git</h2>
+                <p>Being a developer means being a part of a team or a group and Git is THE tools to work with other people on the same project at the same time without creating conflict.</p>
+            </div>
+        </div>
+        <div id="item6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item6')">&times;</span>
+                <h2>Bootstrap</h2>
+                <p>We have to be honest, I love doing things from scratch but CSS frameworks are game changers.</p>
+            </div>
+        </div>
+        <div id="item7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item7')">&times;</span>
+                <h2>Tailwind</h2>
+                <p>Bootstrap vs Tailwind... I Had to see by myself which one is better.</p>
+            </div>
+        </div>
+        <div id="item8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('item8')">&times;</span>
+                <h2>React</h2>
+                <p>The big boy, you can't take a web developer seriously if he/she/they don't know React.js, so this is my main focus at the time I'm writing this..</p>
+            </div>
+        </div>
+
+        <section class="tools">
+            <div class="tools-description" data-tilt data-tilt-max="10" data-tilt-scale="1.08">
+                <p>As an autodidactic I have faced many challenges since I've dived into the web development world
+                   and I knew that the most important thing was to follow a roadmap and master the basics.
+                   Let me show you the different tools that I've used so far to make sure I stayed on the right learning path. 
+                </p>
+            </div>
+            <div class="tool-box" data-tilt data-tilt-max="8" data-tilt-scale="1.2">
+                <ul>
+                    <li>W3Schools</li>
+                    <li>Codepen</li>
+                    <li>Freecodecamp</li>
+                    <li>Scrimba</li>
+                    <li>Codecademy</li>
+                    <li>Brilliant</li>
+                    <li>Skrita</li>
+                    <li>Github</li>
+                    <li>Linkedin learning</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="email">
+                <p>matthieu.goudiaby@gmail.com</p>
+            </div>
+            <div class="social-media-container">
+                <div><a href="https://www.linkedin.com/in/matthieu-goudiaby" class="fa-brands fa-linkedin icon"></a></div>
+                <div><a href="https://github.com/Hybridham" class="fa-brands fa-github icon"></a></div>
+                <div><a href="" class="fa-brands fa-instagram icon"></a></div>
+            </div>
+            <div class="credits">
+                <h2 class="animate__animated animate__shakeX animate__infinite animate__slower"><a href="./credits.html">Credits</a></h2>
+            </div>
+            <div class="coordinates">
+                <p>
+                    This portfolio was built using HTML, CSS and Javascript only.<br>
+                    Made in Melbourne, created to improve life.<br> 
+                    Copyright © 2023 <br>
+                    All right reserved. <br>
+                    .8136° S, 144.9631° E</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="Portfolio.js"></script>
+
+
+    <!--Navbar display animation-->
+
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+                .documentElement.scrollTop;
+            if (scrollTop > lastScrollTop){
+                navbar.style.top="-80px";
+            } else {
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+
+<!--Hamburger menu display for small screens-->
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const tabs = document.querySelector(".tabs");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            tabs.classList.toggle("active");
+        })
+    </script>
+
+    <!--Switch themes button-->
+
+    <script type="text/javascript">
+        const switchElement = document.querySelector('.switch')
+
+        switchElement.addEventListener('click', () => {
+        document.body.classList.toggle('dark')
+    })
+    </script>
+
+    <!--Projects accordion display-->
+
+    <script>
+        const accordion = document.getElementsByClassName('content-box');
+
+        for (i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
+    <!--Skills description modals display-->
+
+    <script>
+        function openModal(itemId) {
+            document.getElementById(itemId).style.display = "block";
+        }
+
+        function closeModal(itemId) {
+            document.getElementById(itemId).style.display = "none";
+        }
+    </script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".greetings", {
+    strings:['Hello','Bonjour','Ciao','Γειά σου','Hola','olá','你好','Xin chào','こんにちは','привет','Hallå'],
+    startDelay: 2000,
+    typeSpeed:100,
+    backSpeed:60,
+    backDelay:3000,
+    smartBackspace:true,
+    loop:true,
+    });
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+    
+
+</body>
+</html>

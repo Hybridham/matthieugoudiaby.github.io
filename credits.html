@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Credits</title>
+    <style>
+        body{
+            background-color: rgb(197, 197, 197);
+        }
+        .back-to-menu a{
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            font-size: 30px;
+        }
+        .mode-toggle{
+            position: absolute;
+            padding: 0;
+            top: 2%;
+            right: 2%;
+        }
+        @keyframes credits{
+            0%{
+        top: 170%;
+        }
+            100%{
+        top: -500%;
+        }
+    }
+
+        @media only screen and (max-width: 600px) {
+            body{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrapper{
+                position: absolute;
+                width: 80%;
+                margin: auto;
+                animation: 150s credits linear infinite;
+            }
+            @keyframes credits{
+            0%{
+        top: 215%;
+        }
+            100%{
+        top: -500%;
+        }
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="back-to-menu">
+        <h2 class="">
+            <a href="./Portfolio.html" >
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </h2>
+    </div>
+    <div class="mode-toggle">
+                <div class="switch">
+                    <div class="flicker"></div>
+                    <div class="moon"></div>
+                </div>
+            </div>
+    <div class="wrapper">
+        <h1>Thank you for taking the time <br> to look at my Portfolio</h1>
+        <div class="text">
+            <h3>I've made it possible with the help of:</h3>
+            <p>Google</p>
+            <p>Youtube</p>
+            <p>Twitch</p>
+            <p>Stack overflow</p>
+            <p>W3schools</p>
+            <p>Github</p>
+            <p>Reddit</p>
+            <p>Linkedin learning</p>
+        </div>
+        <div class="text">
+            <h3>The portfolio, website and small projects have been created by using: </h3>
+            <p>Visual Studio Code</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>JQuery</p>
+            <p>AOS</p>
+            <p>Vanilla tilt</p>
+            <p>Rellax.js</p>
+            <p>Bootstrap</p>
+            <p>Figma</p>
+        </div>
+        <div class="text">
+            <h3>Sources of inspiration:</h3>
+            <p>Tom clancy's The divison</p>
+            <p>Destiny</p>
+            <p>Anthem</p>
+            <p>Space X</p>
+            <p>Nasa</p>
+            <p>Blue origin</p>
+            <p>Virgin galactic</p>
+            <p>Formula 1</p>
+            <p>Moto GP</p>
+        </div>
+        <div class="text">
+            <p>I would like to pay my respects to the Indigenous Peoples. I pay my respects to their elders, past, present, and future.
+            <br><br>
+            Australia is made up of many different and distinct Aboriginal and Torres Strait Islander groups, each with their own culture, language, beliefs and practices. 
+            <br><br>
+            Aboriginal and Torres Strait Islander peoples are the first peoples of Australia, meaning they were here for thousands of years prior to colonisation.</p>
+        </div>
+        <div class="text">
+            <h4>Stay positive</h4>
+            <h4>Stay safe</h4>
+            <br><br><br>
+            <h3>"This is the way !"</h3>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const switchElement = document.querySelector('.switch')
+
+        switchElement.addEventListener('click', () => {
+        document.body.classList.toggle('dark')
+    })
+    </script>
+</body>
+</html>

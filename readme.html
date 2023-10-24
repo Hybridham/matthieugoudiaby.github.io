@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>About me</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: consolas;
+        background-color: lightgray;
+        }
+        .back-to-menu a{
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            font-size: 30px;
+            color: black;
+        }
+        .readme-container{
+            display: flex;
+            flex-direction: column;
+            margin: 15% auto;
+            padding: 20px;
+            max-width: 60%;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 10px 50px #858585;
+            border: 1px solid #a8a8a8;
+            transform-style: preserve-3d;
+            animation: fadein 3s;
+        }
+
+        .readme-container > *{
+            padding: 10px 30px;
+            transform: translateZ(80px);
+        }
+
+        @keyframes fadein{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+</style>
+
+<body>
+    <div class="back-to-menu">
+        <h2 class="">
+            <a href="./Portfolio.html" >
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </h2>
+    </div>
+    <div class="readme-container" data-tilt data-tilt-max="5" data-tilt-scale="1.05">
+        <h3>Hi there,</h3>
+        <p>
+            I’m a fervent and innovative “fresh off the boat” developer with a strong foundation in creating visually stunning and user-friendly websites.
+            <br><br>
+            I’m well versed in HTML5, CSS3 and Javascript while “trying my best to” stay updated with emerging trends and frameworks. I love turning complex concepts into elegant, intuitive and accessible designs. My goal is to strike the perfect balance between aesthetics and functionality, creating visually compelling web pages that prioritize an exceptional user experience.
+            <br><br>
+            Collaboration is at the heart of my work ethic. When I’m not immersed in coding you’ll find me on the sports field and sport has taught me the importance of teamwork, discipline and perseverance, qualities that I will bring to my work as a developer. I believe in the power of collaboration and would enjoy working in cross functional teams to achieve goals.
+            <br><br>
+            With my diverse background I try to bring a unique perspective to work, I thrive in dynamic and creative environments where I can work closely with fellow developers to bring a vision to life. Effective communication and a deep understanding of client’s needs are crucial for successful project outcomes.
+            <br><br>
+            Besides technical skills, I bring a creative mindset to my work. I am continuously exploring new design trends, experimenting with color palettes, typography and layouts to create visually stunning websites. I take pride in my ability to transform ideas into tangible digital solutions that surpass expectations.
+            <br><br>
+            In addition to my technical abilities , I value continuous learning and growth. I believe that staying at the forefront of technology is essential to deliver cutting-edge web applications or websites that push boundaries and elevate the digital experience.
+            <br><br>
+            If you’re looking for a dedicated web developer who brings enthusiasm, creativity and a love for programming to the table I’d like to connect with you. Let’s collaborate and create something extraordinary together.
+            
+
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+   * {
+    text-decoration: none;
+   }
+    body {
+        text-decoration: none;
+        background: grey;
+    }
+   
+    .side-menu {
+        position: fixed;
+        height: 100%;
+        width: 20%;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        background: grey;
+        border-right: 3px solid rgb(145, 252, 225);
+    }
+    .back-to-menu a{
+        position: fixed;
+        top: 5%;
+        left: 8.5%;
+        font-size: 50px;
+        color: #000;
+        z-index: 100;
+        }
+    .side-menu a {
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px auto;
+        max-width: 70%;
+        height: 30px;
+        border-radius: 15px;
+        background-color: lightgray;
+        border: 1px solid grey;
+    }
+    
+    .menu-content {
+        display: flex;
+        margin-top: 30vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-list{
+        width: 100%;
+        border: 3px solid lightblue;
+    }
+    .menu-content h2 {
+        display: flex;
+        width: 40%;
+        padding: 0 0 10px 0;
+        justify-content: center;
+        margin-bottom: 40px;
+        border-bottom: 3px solid black;
+    }
+   
+   .project-content {
+    width: 60%;
+    margin: 50px 150px 200px auto;
+    background: lightgray;
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 10px 10px 100px grey;
+   }
+   h3{
+        width: 10%;
+        margin: 200px auto 0;
+    }
+
+ /*Countdown timer CSS*/  
+   .countdown-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+    .countdown-title {
+        font-size: 25px;
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .countdown {
+        display: flex;
+        margin: auto 50px;
+        justify-content: space-evenly;
+    }
+
+    .countdown div{
+        justify-content: space-evenly;
+    }
+/*Memory Game CSS CSS*/  
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% auto;
+    width: 400px;
+    height: 250px;
+}
+
+/*Password Generator CSS*/
+#password-generator-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+    display: flex;
+    margin: 50px auto 30px;
+    padding: 15px;
+    max-width: 500px;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+}
+
+.container h1 {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.container h1 span {
+    color: rgb(247, 98, 155);
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+button{
+    max-width: 400px;
+}
+
+.password-generator-area button {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: black;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+ .password-generator-area button h3{
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
+
+/*RPS CSS*/
+.game-area{
+    height: auto;
+    width: 400px;
+    margin:25% auto;
+    padding: 50px;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    border: 3px solid black;
+}
+
+.game-area h2{
+    margin: 40px auto;
+    width: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.game-area button {
+    display: flex;
+    justify-content: center;
+    width: 28%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: lightgray;
+    outline: none;
+    border: none;
+}
+
+/*To Do list CSS*/
+.todo-app {
+    width: 400px;
+    background: #fff;
+    margin: 200px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+    background-color: #edeef0;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.todo-app button {
+    border: none;
+    outline: none;
+    padding: 16px 45px;
+    background: #f7747a;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 0px 12px 55px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 16px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+/*Whacamole CSS*/
+.title-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px auto;
+}
+
+h2{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.whacamole-grid {
+    width: 606px;
+    height: 606px;
+    margin: 50px auto;
+    border: 3px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+}
+
+.mole {
+    background-image: url('Whacamole/mole.jpg');
+    background-size: cover;
+}
+
+/*Media Querie for responsive design*/
+
+    @media only screen and (max-width: 600px){
+        .back-to-menu a{
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            font-size: 30px;
+        }
+        
+        .side-menu{
+            position: absolute;
+            top: -200px;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+        }
+        h2{
+            text-align: center;
+        }
+        .side-menu{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50px;
+        }
+        .menu-content h2{
+            position: absolute;
+            top: 10px;
+            margin: 0;
+        }
+        .menu-list {
+            position: absolute;
+            top: -380px;
+            width: 100%;
+            background: grey;
+            border: none;
+            transition: .3s;
+        }
+        .menu-list.active{
+            top: 80px;
+        }
+        .menu-content a{
+            position: relative;
+            font-size: 15px;
+        }
+        .hamburger{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all .3s ease-in-out;
+        background-color: #000;
+        }
+    
+        .project-content{
+            margin: 120px auto -80px;
+            width: 100%;
+            border: 3px solid lightgray;
+        }
+        .countdown-title h2{
+            font-size: 20px;
+        }
+        .countdown div{
+            font-size: 15px;
+        }
+        #memory-game-content h3{
+            margin: 20px auto;
+            width: 90%;
+            font-size: 15px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+        .password-generator-area h1{
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+        input[type="text"]{
+            font-size: 15px;
+        }
+        .display {
+            width: 70%;
+        }
+        .display img{
+            display: none;
+        }
+        .game-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+        }
+        .game-area h2{
+            font-size: 15px;
+            width: 100%;
+        }
+        .game-area button{
+            width: 20%;
+            font-size: 15px;
+        }
+        .todo-app{
+            width: 80%;
+            height: auto;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-top: 50px;
+        }
+        .row input{
+            text-align: center;
+        }
+        .row button{
+            background: rgb(128, 204, 84);
+        }
+        .title-container h2{
+            width: 100%;
+        }
+        .whacamole-grid{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border: none;
+        }
+        .whacamole-grid .square{
+            width: 120px;
+            height: 130px;
+        }
+    }    
+    /*@media only screen and (min-width: 840px){
+        .menu-content h2{
+            width: 80%;
+            font-size: 20px;
+        }
+        .side-menu a {
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 20px auto;
+        width: 80%;
+        height: 30px;
+        border-radius: 15px;
+        background-color: lightgray;
+        border: 1px solid grey;
+    }
+    .project-content{
+        width: 70%;
+        margin-right: 45px;
+    }
+    .whacamole-grid{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border: none;
+        }
+        .whacamole-grid .square{
+            width: 120px;
+            height: 130px;
+        }
+    }
+  */
+</style>
+<body>
+    <div class="back-to-menu">
+        <h2 class="">
+            <a href="./Portfolio.html" >
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </h2>
+    </div>
+    <div class="side-menu">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>  
+        <div class="menu-content">
+            <h2>Projects list</h2>
+            <div class="menu-list">
+                <a href="">Countdown timer</a>
+                <a href="">Memory game</a>
+                <a href="">Password generator</a>
+                <a href="">Rock, Paper, Scissors</a>
+                <a href="">To Do App</a>
+                <a href="">Whacamole</a>
+            </div>
+        </div>
+    </div>
+    <!--Countdown timer-->
+    <div class="project-content">
+        <div class="countdown-container">
+            <div class="countdown-title">
+                <h2>Time until we pop some Champagne Papy!</h2>
+            </div>
+            <div class="countdown">
+                <div>
+                    <h1 id="days">00</h1>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <h1 id="hours">00</h1>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <h1 id="minutes">00</h1>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <h1 id="seconds">00</h1>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Memory games-->
+    <div class="project-content" id="memory-game-content">
+        <h3>Score:<span id="result"></span></h3>
+        <div class="grid">
+        </div>
+    </div>
+    
+    <!--Password generator-->
+    <div class="project-content" id="password-generator-content">
+       <div class="password-generator-area">
+        <h1>Generate  a <span>random password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="images/copy.png" alt="" onclick="copyPassword()" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-title="This top tooltip is themed via CSS variables.">
+        </div>
+        <button onclick="createPassword()"><h3>Generate password</h3></button>
+       </div>
+        
+    </div>
+
+    <!--RPS game-->
+    <div class="project-content">
+        <div class="game-area">
+             <h2>User Choice: <span id="user-choice"></span></h2>
+             <h2>Computer Choice: <span id="computer-choice"></span></h2>
+             <h2>Result: <span id="results"></span></h2>
+         <div class="buttons">
+             <button id="rock">Rock</button>
+             <button id="paper">Paper</button>
+             <button id="scissors">Scissors</button>
+         </div>
+        </div>  
+     </div>
+
+     <!--To Do App-->
+     <div class="project-content">
+        <div class="todo-app">
+            <h2>To Do List <img src="ToDo App/images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!--Whacamole-->
+    <div class="project-content">
+      <div class="title-container">
+        <h2>Your score:</h2>
+        <h2 id="score">0</h2>
+
+        <h2>Time left:</h2>
+        <h2 id="time-left">60</h2>
+      </div>
+
+      <div class="whacamole-grid">
+          <div class="square" id="1"></div>
+          <div class="square" id="2" ></div>
+          <div class="square mole" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+      </div>
+  </div>
+
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const tabs = document.querySelector(".menu-list");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        tabs.classList.toggle("active");
+    })
+</script>
+
+<!--Countdown timer javascript-->
+<script>
+    //Set the target date we are counting down to.
+var countDownDate = new Date ("Jan 1, 2024 00:00:00").getTime();
+
+//set the countdown to every one second.
+        var x = setInterval(function(){ 
+
+//set today's date and time.
+        var now = new Date().getTime();
+
+//Calculate the number of days between the "onday" and the target.
+        var distance = countDownDate - now;
+
+//Calculate the number of days, hours, minutes and seconds.
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//Display the result on the HTML page.
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+          
+        },1000)
+</script>
+
+<!--Memory game javascript-->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    //card options
+    const cardArray = [
+      {
+        name: 'fries',
+        img: 'images/fries.png'
+      },
+      {
+        name: 'cheeseburger',
+        img: 'images/cheeseburger.png'
+      },
+      {
+        name: 'ice-cream',
+        img: 'images/ice-cream.png'
+      },
+      {
+        name: 'pizza',
+        img: 'images/pizza.png'
+      },
+      {
+        name: 'milkshake',
+        img: 'images/milkshake.png'
+      },
+      {
+        name: 'hotdog',
+        img: 'images/hotdog.png'
+      },
+      {
+        name: 'fries',
+        img: 'images/fries.png'
+      },
+      {
+        name: 'cheeseburger',
+        img: 'images/cheeseburger.png'
+      },
+      {
+        name: 'ice-cream',
+        img: 'images/ice-cream.png'
+      },
+      {
+        name: 'pizza',
+        img: 'images/pizza.png'
+      },
+      {
+        name: 'milkshake',
+        img: 'images/milkshake.png'
+      },
+      {
+        name: 'hotdog',
+        img: 'images/hotdog.png'
+      }
+    ]
+    cardArray.sort(() => 0.5 - Math.random())
+  
+  const grid = document.querySelector('.grid')
+  const resultDisplay = document.querySelector('#result')
+  let cardsChosen = []
+  let cardsChosenId = []
+  let cardsWon = []
+
+  //create your board
+  function createBoard() {
+    for (let i = 0; i < cardArray.length; i++) {
+      const card = document.createElement('img')
+      card.setAttribute('src', 'images/blank.png')
+      card.setAttribute('data-id', i)
+      card.addEventListener('click', flipCard)
+      grid.appendChild(card)
+    }
+  }
+
+  //check for matches
+  function checkForMatch() {
+    const cards = document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId = cardsChosenId[1]
+    
+    if(optionOneId == optionTwoId) {
+      cards[optionOneId].setAttribute('src', 'images/blank.png')
+      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      alert('You have clicked the same image!')
+    }
+    else if (cardsChosen[0] === cardsChosen[1]) {
+      alert('You found a match')
+      cards[optionOneId].setAttribute('src', 'images/white.png')
+      cards[optionTwoId].setAttribute('src', 'images/white.png')
+      cards[optionOneId].removeEventListener('click', flipCard)
+      cards[optionTwoId].removeEventListener('click', flipCard)
+      cardsWon.push(cardsChosen)
+    } else {
+      cards[optionOneId].setAttribute('src', 'images/blank.png')
+      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      alert('Sorry, try again')
+    }
+    cardsChosen = []
+    cardsChosenId = []
+    resultDisplay.textContent = cardsWon.length
+    if  (cardsWon.length === cardArray.length/2) {
+      resultDisplay.textContent = 'Congratulations! You found them all!'
+    }
+  }
+
+  //flip your card
+  function flipCard() {
+    let cardId = this.getAttribute('data-id')
+    cardsChosen.push(cardArray[cardId].name)
+    cardsChosenId.push(cardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length ===2) {
+      setTimeout(checkForMatch, 500)
+    }
+  }
+
+  createBoard()
+})
+</script>
+
+<!--Password generator javascript-->
+<script>
+  //Target the password placeholder and enter a 20 characters random password.
+const passwordBox = document.getElementById("password");
+const lenght = 20;
+
+//Setting different characters for our password.
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const number = "0123456789";
+const symbol = "!@#$%^&*()_-+=/,.<>{}[]"
+
+//Letting the system know that it can use a comppilation of mixed characters.
+const allCharacters = upperCase + lowerCase + number + symbol;
+
+//Creating the function to be executed when we click on the "Generate password" button
+function createPassword() {
+    let password = "";
+    password += upperCase[Math.floor(Math.random() * upperCase.length)];
+    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+    password += number[Math.floor(Math.random() * number.length)];
+    password += symbol[Math.floor(Math.random() * symbol.length)];
+
+    while(lenght >password.length ){
+        password += allCharacters[Math.floor(Math.random() * allCharacters.length)];
+    }
+    passwordBox.value = password;
+};
+
+//Copying the password when clicking on the "copy button".
+function copyPassword() {
+    passwordBox.select();
+    document.execCommand("copy");
+}
+
+//Tooltip when going moving mouse over the logo.
+const tooltipTrigger = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipContent = [...tooltipTrigger].map(tooltipEl => new bootstrap.Tooltip(tooltipEl));
+</script>
+
+<!--RPS javascript-->
+<script>
+  const userChoiceDisplay = document.getElementById('user-choice')
+const computerChoiceDisplay = document.getElementById('computer-choice')
+const resultDisplay = document.getElementById('results')
+const possibleChoices = document.querySelectorAll('button')
+let userChoice 
+let computerChoice
+
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userChoice = e.target.id
+    userChoiceDisplay.innerHTML = userChoice
+    generateComputerChoice()
+    getResult()
+}))
+
+function generateComputerChoice () {
+    const randomNumber = Math.floor(Math.random() * 3) + 1
+
+    if (randomNumber === 1) {
+        computerChoice = 'rock'
+    }
+    if (randomNumber === 2) {
+        computerChoice = 'scissors'
+    }
+    if(randomNumber === 3) {
+        computerChoice = 'paper'
+    }
+    computerChoiceDisplay.innerHTML = computerChoice
+}
+
+function getResult() {
+    if (computerChoice === userChoice) {
+      result = 'Its a draw !'
+    }  
+    if (computerChoice === 'rock' && userChoice === 'paper') {
+      result = 'You are the winner !'
+    }
+    if (computerChoice === 'rock' && userChoice === 'scissors') {
+      result = 'You lost !'
+    }
+    if (computerChoice === 'paper' && userChoice === 'scissors') {
+      result = 'You won ! '  
+    }
+    if (computerChoice === 'paper' && userChoice ==='rock') {
+      result = 'You lost !'
+    }
+    if (computerChoice === 'scissors' && userChoice === 'rock') {
+      result = 'Bravo you won this one !' 
+    }  
+    if (computerChoice === 'scissors' && userChoice === 'paper') {
+    result = 'Sorry you lost !' 
+    }
+   resultDisplay.innerHTML = result 
+}
+</script>
+
+<!--ToDo App javascript-->
+<script>
+  //Create the variables that target the input-box and the list-container.
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
+//Create a function for when we click the "Add" button.
+function addTask() {
+    //If placeholder is empty the browsert will display an alert message!
+    if(inputBox.value === ''){
+        alert("You need to enter a task!");
+    }
+    else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
+    }
+    inputBox.value = "";
+    saveData();
+}
+
+/*When we click on the task name it will appear as checked, if, we click on the cross symbol it will remove the tas from the list*/
+listContainer.addEventListener("click", function(e){
+    if(e.target.tagName === 'LI'){
+        e.target.classList.toggle("checked");
+        saveData();
+    }
+    else if(e.target.tagName === 'SPAN'){
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
+/*Save the data (tasks) in the browser's local storage and keep the list on display even when we close and re-open the page*/
+function saveData() {
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+function showSavedTask() {
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showSavedTask();
+</script>
+
+<!--Whacamole javascript-->
+<script>
+  //Select every containers
+const squares = document.querySelectorAll('.square')
+const mole = document.querySelector('.mole')
+const timeLeft = document.querySelector('#time-left')
+const score = document.querySelector('#score')
+
+let result = 0
+let hitPosition
+let currentTime = 60
+let timerId = null 
+
+//Select square for the mole 
+function randomSquare() {
+    squares.forEach(square => {
+        square.classList.remove('mole') 
+    })
+ 
+    let randomSquare = squares[Math.floor(Math.random() * 9)]
+     randomSquare.classList.add('mole')
+
+     hitPosition = randomSquare.id
+}
+
+
+squares.forEach(square => {
+    square.addEventListener('mousedown', () => {
+        if (square.id == hitPosition ) {
+            result++
+            score.textContent = result
+            hitPosition = null
+        }
+    })
+})
+
+//Generate a random square every 1 second
+function moveMole() {
+    timerId = setInterval(randomSquare, 1000)
+}
+
+moveMole()
+
+//Stop the game when the counter reached zero
+function countDown() {
+    currentTime--
+     timeLeft.textContent = currentTime
+     if (currentTime == 0) {
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! Your score is '+result)
+     }
+}
+
+let countDownTimerId = setInterval(countDown, 1000)
+
+</script>
+</html>
